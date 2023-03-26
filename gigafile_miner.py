@@ -54,7 +54,7 @@ try:
         get = requests.get(new_url, timeout=6)
         get_url = get.url
         if len(get_url) > 30:
-            print("\r[*] [ " + string + " ] collect!! --> " +
+            print("\r[*] [ " + string + " ] unearth!! --> " +
                   Color.YELLOW + get_url + Color.END)
 except KeyboardInterrupt:
     print("\nbye")
