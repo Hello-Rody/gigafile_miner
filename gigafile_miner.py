@@ -27,6 +27,6 @@ try:
         get = requests.get(new_url, timeout=6)
         get_url = get.url
         if len(get_url) > 30:
-            print("\r[+] collect!! --> " + new_url)
+            print("\r[!] [ " + string + " ] collect!! --> " + get_url)
 except KeyboardInterrupt:
     print("\nbye")
