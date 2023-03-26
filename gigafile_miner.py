@@ -30,7 +30,7 @@ print(Color.BLUE + "     *@@@" + Color.END +
 print("        //" + Color.BLUE + "@@|" + Color.END +
       Color.CYAN + "    GigaFile Miner" + Color.END)
 print("       //" + Color.BLUE + "  @|" +
-      Color.END + "    A GigaFile Miner by Rody")
+      Color.END + "    A Mining GigaFile by Rody")
 print("      //         https://github.com/Hello-Rody/gigafile_miner")
 print("     //\n")
 
@@ -50,11 +50,11 @@ try:
         rand_num = random.randint(4, 5)
         string = rand_str(rand_num)
         new_url = url + string
-        print("\r[+] checking... [ " + string + " ] ", end=" ")
+        print("\r[+] [ " + string + " ] mining...", end=" ")
         get = requests.get(new_url, timeout=6)
         get_url = get.url
         if len(get_url) > 30:
             print("\r[*] [ " + string + " ] collect!! --> " +
-                  Color.RED + get_url + Color.END)
+                  Color.YELLOW + get_url + Color.END)
 except KeyboardInterrupt:
     print("\nbye")
