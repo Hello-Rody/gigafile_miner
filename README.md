@@ -13,10 +13,11 @@ GigaFile便にはURL短縮機能があり、4~5文字のランダムな文字列
  あとは実行するだけ
  ```
  $ python gigafile_miner.py 
-[+] collect!! --> https://xgf.nu/****
-[+] collect!! --> https://xgf.nu/****
-[+] collect!! --> https://xgf.nu/****
-[+]checking... [ D0FO ]
+[!] [ **** ] collect!! --> https://**.gigafile.nu/****-********************************
+[!] [ **** ] collect!! --> https://**.gigafile.nu/****-********************************
+[!] [ **** ] collect!! --> https://**.gigafile.nu/****-********************************
+[!] [ **** ] collect!! --> https://**.gigafile.nu/****-********************************
+[+] checking... [ **** ]
 ```
 ## 備考
 デフォルトでは4~5文字の文字列を生成しますが、5文字のURLが見つかる確率は単純計算で4文字の62倍です
