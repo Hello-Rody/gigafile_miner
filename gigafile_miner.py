@@ -30,7 +30,7 @@ print(Color.BLUE + "     *@@@" + Color.END +
 print("        //" + Color.BLUE + "@@|" + Color.END +
       Color.CYAN + "    GigaFile Miner" + Color.END)
 print("       //" + Color.BLUE + "  @|" +
-      Color.END + "    A Mining GigaFile by Rody")
+      Color.END + "    A GigaFile Miner by Rody")
 print("      //         https://github.com/Hello-Rody/gigafile_miner")
 print("     //\n")
 
