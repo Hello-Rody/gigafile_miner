@@ -36,10 +36,8 @@ print("     //\n")
 
 
 def rand_str(l):
-    random_string = ""
-    for lengh in range(l):
-        one = random.choice(lower + upper + num)
-        random_string += one
+    random_string = random.choices(lower + upper + num, k=l)
+    random_string = "".join(random_string)
     return random_string
 
 
@@ -50,11 +48,11 @@ try:
         rand_num = random.randint(4, 5)
         string = rand_str(rand_num)
         new_url = url + string
-        print("\r[+] [ " + string + " ] mining...", end=" ")
-        get = requests.get(new_url, timeout=6)
+        print(f"\r[+] [ {string} ] mining...", end=" ")
+        get = requests.get(new_url, timeout=10)
         get_url = get.url
         if len(get_url) > 30:
-            print("\r[*] [ " + string + " ] unearth!! --> " +
+            print(f"\r[*] [ {string} ] discover!! --> " +
                   Color.YELLOW + get_url + Color.END)
 except KeyboardInterrupt:
     print("\nbye")
